@@ -1,0 +1,277 @@
+/*VideoPlayer.css*/
+.video_chat {
+  display: flex;
+}
+
+.video_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 64px;
+}
+.vchat-room {
+  display: flex;
+  gap: 30px;
+  margin-top: 32px;
+}
+.video_container .our_video {
+  width: 100%;
+  border: 1px groove purple;
+}
+video {
+  width: 100%;
+}
+/*Options.css*/
+.user_video_container {
+  padding: 32px;
+  width: 100%;
+}
+.video_options {
+  display: flex;
+  justify-content: space-evenly;
+}
+.video_options .video_id {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  color: white;
+  font-size: 25px;
+  border: 1px solid purple;
+  box-shadow: 0px 0px 8px 3px rgba(83, 50, 76, 0.75);
+
+  /* background: linear-gradient(rgb(117, 77, 150, 0.75), rgb(231, 98, 231, 0.75)); */
+}
+.video_options .video_id > button {
+  border: none;
+  border-radius: 10px;
+  background: none;
+  border: 1px solid purple;
+  color: purple;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.video_options .video_id > input {
+  width: 100%;
+}
+
+/* video player Responsive */
+@media (max-width: 600px) {
+  .video_options {
+    flex-direction: column;
+    width: 100%;
+  }
+  .video_options .video_id {
+    font-size: 16px;
+  }
+  .video_options .video_id > button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vchat-room {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .video_container {
+    padding: 16px;
+  }
+  .user_video_container {
+    padding: 16px;
+  }
+}
+
+/* Notification.css */
+.call_receiver {
+  display: flex;
+  gap: 20px;
+  /* color: rgb(7, 7, 7); */
+  align-items: center;
+  padding: 20px;
+  margin-top: 30px;
+  color: purple;
+}
+.call_receiver button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.call_receiver button > img {
+  width: 40px;
+  height: 40px;
+}
+
+/* options */
+.call-accepted button {
+  border: none;
+  background: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.call-accepted button > img {
+  width: 40px;
+  height: 40px;
+}
+.call-accepted {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+/* option responsive */
+@media (max-width: 500px) {
+  .call-accepted button > img {
+    width: 30px;
+    height: 30px;
+  }
+  .call-accepted {
+    gap: 8px;
+  }
+}
+
+/* Register.jsx, Login.jsx */
+.reg_main,
+.log_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  gap: 20px;
+  color: white;
+}
+.reg_main form,
+.log_main form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  /* background: linear-gradient(rgb(117, 77, 150), rgb(231, 98, 231)); */
+  /* box-shadow: 0 0 5px 8px whitesmoke; */
+  border: 1px solid purple;
+  box-shadow: 0px 0px 8px 3px rgba(83, 50, 76, 0.75);
+  color: white;
+  border-radius: 5px;
+}
+.reg_main form > input,
+.log_main form > input {
+  width: 350px;
+  outline: none;
+
+  background: none;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid purple;
+  box-shadow: 0 8px 6px -6px rgba(83, 50, 76, 0.75);
+}
+.reg_main form .reg_btn button,
+.log_main form .reg_btn button {
+  width: 50%;
+  background: none;
+  border: 1px solid purple;
+  color: purple;
+  padding: 6px;
+}
+
+.reg_main form .reg_btn button:hover,
+.log_main form .reg_btn button:hover {
+  box-shadow: 0px 0px 8px 3px rgba(83, 50, 76, 0.75);
+}
+.reg_main form .reg_btn,
+.log_main form .reg_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.reg_btn .direct_link {
+  display: flex;
+  gap: 10px;
+  color: whitesmoke;
+}
+
+.reg_btn .direct_link > a {
+  text-decoration: none;
+  color: purple;
+}
+
+/* Header css */
+.vchat_head_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background: radial-gradient(rgb(43, 4, 53), black, rgb(25, 1, 44));
+  color: white;
+  border: 1px solid purple;
+}
+
+.vchat_head {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.vchat_head > img {
+  width: 30px;
+  height: 30px;
+}
+.vchat_entry a {
+  text-decoration: none;
+  border: 1px solid purple;
+  color: purple;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.vchat_entry a:hover,
+.vchat_entry button:hover {
+  box-shadow: 0px 0px 8px 3px inset rgba(83, 50, 76, 0.75);
+}
+.vchat_entry button {
+  /* background: linear-gradient(rgb(117, 77, 150), rgb(231, 98, 231)); */
+  border: 1px solid purple;
+  color: purple;
+  padding: 5px;
+  border-radius: 10px;
+  background: none;
+}
+
+.vchat_entry {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 480px) {
+  .reg_main form,
+  .log_main form,
+  .reg_main form > input,
+  .log_main form > input {
+    width: 100%;
+  }
+}
+
+/*Avatar css*/
+.pro_pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: whitesmoke;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  color: blueviolet;
+}
+.avatar_main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid purple;
+  padding: 5px;
+}

@@ -1,0 +1,15 @@
+.login_main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.login_main form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 300px;
+  padding: 20px;
+  background-color: blanchedalmond;
+}
